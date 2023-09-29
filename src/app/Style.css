@@ -14,3 +14,25 @@
     /* background-color: black; */
     background: #f1f1f1e3;
 }
+
+.banner {
+    background-color: aqua;
+    height: 240px;
+    border-radius: 20px;
+    margin-top: 40px;
+    background-image: url(/Images/bg/bg-1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.btn-change {
+    border: 1px solid #F8B602;
+    border-radius: 10px;
+    color: #F8B602;
+}
+
+.btn-normal {
+    border: 1px solid #544e5e;
+    border-radius: 10px;
+    color: #544e5e;
+}
