@@ -28,7 +28,7 @@ const ProductCard = ({ type }) => {
               </div>
               <div>
                 <button className='bg-color-1 p-3 rounded-lg'>
-                  <Image src={'/Images/icon/plus.png'} width={25} height={25} alt='Plus' />
+                  <Image src={'/Images/icon/plus.png'} width={20} height={20} alt='Plus' />
                 </button>
               </div>
             </div>

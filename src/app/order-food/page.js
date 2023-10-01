@@ -12,20 +12,22 @@ export default function Home() {
         <Sidebar />
       </div>
       <div className="container-2 px-5 h-screen overflow-y-auto">
-        <Topbar />
-        <div className="grid gap-10 justify-items-center grid-cols-4 mt-10">
-          <OrderCard count={1} status={"completed"} />
-          <OrderCard count={2} status={"delivering"} />
-          <OrderCard count={3} status={"completed"} />
-          <OrderCard count={4} status={"prepared"} />
-          <OrderCard count={5} status={"completed"} />
-          <OrderCard count={6} status={"delivering"} />
-          <OrderCard count={7} status={"delivering"} />
-          <OrderCard count={8} status={"delivering"} />
+        <Topbar headLine={"Food Order"} />
+        <div className="flex w-full">
+          <div className="w-[75%] h-screen overflow-y-auto pr-2 grid gap-10 justify-items-center grid-cols-4 mt-10">
+            <OrderCard count={1} status={"completed"} />
+            <OrderCard count={2} status={"delivering"} />
+            <OrderCard count={3} status={"completed"} />
+            <OrderCard count={4} status={"prepared"} />
+            <OrderCard count={5} status={"completed"} />
+            <OrderCard count={6} status={"delivering"} />
+            <OrderCard count={7} status={"delivering"} />
+            <OrderCard count={8} status={"delivering"} />
+          </div>
+          <div className="w-[25%]">
+          <OrderRightSide />
+          </div>
         </div>
-      </div>
-      <div className="container-3 bg-gray-100">
-        <OrderRightSide />
       </div>
 
     </section>
