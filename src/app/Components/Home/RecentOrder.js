@@ -14,7 +14,7 @@ const RecentOrder = () => {
                     View All
                     <Image src={'/Images/arrow-right.png'} width={25} height={25}
                         className='mb-1 ml-2'
-                    />
+                        alt='This is Image'/>
                 </Link>
             </div>
 

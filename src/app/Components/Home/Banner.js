@@ -6,13 +6,13 @@ const Banner = () => {
         <div className='w-full banner relative'>
             <Image width={250} height={250}
                 className='absolute right-72'
-                src={'/Images/ellipse.png'} />
+                src={'/Images/ellipse.png'} alt='This is Image'/>
             <Image width={200} height={200}
                 className='absolute right-0 bottom-0'
-                src={'/Images/bg/ellipse-2.png'} />
+                src={'/Images/bg/ellipse-2.png'} alt='This is Image'/>
             <Image width={200} height={200}
                 className='absolute left-0 bottom-0'
-                src={'/Images/bg/ellipse-3.png'} />
+                src={'/Images/bg/ellipse-3.png'} alt='This is Image'/>
             <h1 className='text-4xl pt-10 ml-10 font-bold text-white z-20'>
                 Get Discount Boucher <br /> Up to 20%
             </h1>

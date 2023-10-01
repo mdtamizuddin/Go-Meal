@@ -89,7 +89,7 @@ const MenuCard = () => {
   return (
     <div className='flex items-center justify-between mb-3'>
       <div className='flex items-center'>
-        <Image src={"/Images/product/fish-burger.jpg"} width={64} height={64} />
+        <Image src={"/Images/product/fish-burger.jpg"} width={64} height={64} alt='This is Image'/>
         <div className='ml-2'>
           <h4 className="text-zinc-800 text-sm font-semibold ">Pepperoni Pizza</h4>
           <p className="text-zinc-400 text-sm font-normal ">x1</p>

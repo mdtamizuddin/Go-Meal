@@ -64,7 +64,7 @@ const Sidebar = () => {
                             pathName === manu.route ?
                                 <li key={manu.name} className='w-full bg-color-1 rounded-lg py-2 mt-5 text-center'>
                                     <Link href={manu.route} className='text-[18px] flex items-center justify-start pl-3 text-white '>
-                                        <Image src={manu.icon} width={30} height={30} />
+                                        <Image src={manu.icon} width={30} height={30} alt='This is Image'/>
                                         <span className='ml-2'>
                                             {manu.name}
                                         </span>
@@ -73,7 +73,7 @@ const Sidebar = () => {
                                 :
                                 <li className='w-full rounded-lg py-2 mt-5 text-center'>
                                     <Link href={manu.route} className='text-[18px] text-color-2 flex justify-start pl-3 items-center'>
-                                        <Image src={manu.icon} width={30} height={30} />
+                                        <Image src={manu.icon} width={30} height={30} alt='This is Image'/>
                                         <span className='ml-2'>
                                             {manu.name}
                                         </span>

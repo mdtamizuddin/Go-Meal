@@ -10,12 +10,12 @@ const ProductCard = ({ type }) => {
             <div className='bg-[#EB5757] w-28 flex justify-center items-center rounded-tr-lg rounded-br-lg' >
               <p className='text-white py-1  font-semibold '>15% off</p>
             </div>
-            <Image className='block mx-auto' src={'/Images/product/fish-burger.jpg'} width={200} height={200} />
+            <Image className='block mx-auto' src={'/Images/product/fish-burger.jpg'} width={200} height={200} alt='This is Image'/>
             <div className='flex items-center mt-5'>
-              <Image width={24} height={24} className='mr-2' src={'/Images/star.svg'} />
-              <Image width={24} height={24} className='mr-2' src={'/Images/star.svg'} />
-              <Image width={24} height={24} className='mr-2' src={'/Images/star.svg'} />
-              <Image width={24} height={24} className='mr-2' src={'/Images/star.svg'} />
+              <Image width={24} height={24} className='mr-2' src={'/Images/star.svg'} alt='This is Image'/>
+              <Image width={24} height={24} className='mr-2' src={'/Images/star.svg'} alt='This is Image'/>
+              <Image width={24} height={24} className='mr-2' src={'/Images/star.svg'} alt='This is Image'/>
+              <Image width={24} height={24} className='mr-2' src={'/Images/star.svg'} alt='This is Image'/>
             </div>
 
             <div className='flex justify-between items-center'>
@@ -28,7 +28,7 @@ const ProductCard = ({ type }) => {
               </div>
               <div>
                 <button className='bg-color-1 p-3 rounded-lg'>
-                  <Image src={'/Images/icon/plus.png'} width={20} height={20} alt='Plus' />
+                  <Image src={'/Images/icon/plus.png'} width={20} height={20} alt='Plus'/>
                 </button>
               </div>
             </div>
@@ -36,7 +36,7 @@ const ProductCard = ({ type }) => {
           :
           // This is Recent Card
           <div className='w-full p-7'>
-            <Image className='block mx-auto rounded-lg' src={'/Images/product/pizza.jpg'} width={200} height={220} />
+            <Image className='block mx-auto rounded-lg' src={'/Images/product/pizza.jpg'} width={200} height={220} alt='This is Image'/>
 
 
             <div className='flex justify-center items-center'>

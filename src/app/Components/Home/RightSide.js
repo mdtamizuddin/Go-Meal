@@ -55,7 +55,7 @@ const RightSide = () => {
 
                 </div>
                 <div className="text-zinc-800 text-sm font-medium">Have a coupon code?</div>
-                <Image src={'/Images/icon/arrow-right.png'} width={30} height={30} />
+                <Image src={'/Images/icon/arrow-right.png'} width={30} height={30} alt='This is Image'/>
             </button>
             <div className="w-full mt-8 h-16 p-4 bg-yellow-500 rounded-2xl justify-center items-center gap-2.5 inline-flex">
                 <div className="text-white text-lg font-medium ">Checkout</div>
@@ -70,7 +70,7 @@ const MenuCard = () => {
     return (
         <div className='flex items-center justify-between mb-3'>
             <div className='flex items-center'>
-                <Image src={"/Images/product/fish-burger.jpg"} width={80} height={80} />
+                <Image src={"/Images/product/fish-burger.jpg"} width={80} height={80} alt='This is Image'/>
                 <div className='ml-2'>
                     <h4 className="text-zinc-800 text-lg font-semibold ">Pepperoni Pizza</h4>
                     <p className="text-zinc-400 text-sm font-normal ">x1</p>

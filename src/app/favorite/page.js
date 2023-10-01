@@ -1,8 +1,7 @@
-import Image from "next/image";
+
 import Sidebar from "../Components/Sidebar";
 import Topbar from "../Components/Topbar";
-import OrderRightSide from "../order-food/OrderRightSide";
-import NotificationPanel from "../Components/NotificationPanel";
+
 import ProductCard from "../Components/ProductCard";
 
 
