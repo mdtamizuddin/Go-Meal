@@ -13,7 +13,7 @@ const RowOrder = () => {
                 <div className="flex items-center space-x-3">
                     <div className="avatar w-16 h-16">
                         <div className="rounded">
-                            <Image height={60} width={60}  src="/Images/product/pizza.jpg" />
+                            <Image height={60} width={60}  src="/Images/product/fish-burger.jpg" />
                         </div>
                     </div>
                     <div>
