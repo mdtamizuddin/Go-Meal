@@ -17,7 +17,7 @@ const Sidebar = () => {
             name: "Food Order",
             route: "/order-food",
             icon: "/Images/icon-7.png"
-            
+
         },
         {
             name: "Favorite",
@@ -55,25 +55,25 @@ const Sidebar = () => {
 
     return (
         <div className='sidebar '>
-           <Logo />
+            <Logo />
 
             <ul className='mt-10 px-4'>
                 {
-                    manus.map(manu => <>
+                    manus.map((manu, index) => <div key={index}>
                         {
                             pathName === manu.route ?
-                                <li key={manu.name} className='w-full bg-color-1 rounded-lg py-2 mt-5 text-center'>
+                                <li key={index + Math.random()} className='w-full bg-color-1 rounded-lg py-2 mt-5 text-center'>
                                     <Link href={manu.route} className='text-[18px] flex items-center justify-start pl-3 text-white '>
-                                        <Image src={manu.icon} width={30} height={30} alt='This is Image'/>
+                                        <Image src={manu.icon} width={30} height={30} alt='This is Image' />
                                         <span className='ml-2'>
                                             {manu.name}
                                         </span>
                                     </Link>
                                 </li>
                                 :
-                                <li className='w-full rounded-lg py-2 mt-5 text-center'>
+                                <li key={index + Math.random()} className='w-full rounded-lg py-2 mt-5 text-center'>
                                     <Link href={manu.route} className='text-[18px] text-color-2 flex justify-start pl-3 items-center'>
-                                        <Image src={manu.icon} width={30} height={30} alt='This is Image'/>
+                                        <Image src={manu.icon} width={30} height={30} alt='This is Image' />
                                         <span className='ml-2'>
                                             {manu.name}
                                         </span>
@@ -81,7 +81,7 @@ const Sidebar = () => {
                                 </li>
                         }
 
-                    </>)
+                    </div>)
                 }
 
 

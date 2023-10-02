@@ -56,11 +56,11 @@ export default function page() {
                                     <section className="chat-users mt-5">
                                         {
                                             messages.map((m, index) => {
-                                                return <>
+                                                return <div key={index}>
                                                     {
-                                                        index <= limit && <UserCard data={m} set={setSelected} />
+                                                        index <= limit && <UserCard key={m.name} data={m} set={setSelected} />
                                                     }
-                                                </>
+                                                </div>
                                             })
                                         }
                                     </section>
@@ -97,7 +97,7 @@ export default function page() {
                                                 </div>
                                                 <div className="flex items-center">
                                                     <button>
-                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
                                                             <path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
                                                         </svg>
 
@@ -118,7 +118,7 @@ export default function page() {
                                                 </div>
                                                 <div>
                                                     <button>
-                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13" />
                                                         </svg>
                                                     </button>
@@ -188,7 +188,7 @@ const Chats = ({ chats }) => {
             chats.map((chat, index) => <>
                 {
                     chat.side === "left" ?
-                        <div key={index} className="flex items-end justify-start mt-4">
+                        <div key={index + Math.random()} className="flex items-end justify-start mt-4">
                             <div className="w-14 h-14 relative">
                                 <div className="w-14 h-14 left-0 top-0 absolute bg-stone-300 rounded-2xl" />
                                 <div className="w-4 h-4 left-[44px] top-[44px] absolute bg-lime-400 rounded border border-white" />
@@ -201,7 +201,7 @@ const Chats = ({ chats }) => {
                             </div>
                         </div>
                         :
-                        <div key={index} className="flex items-end justify-end mt-4">
+                        <div key={index + Math.random()} className="flex items-end justify-end mt-4">
                             <div className="mr-5">
                                 <div className=" opacity-80 bg-yellow-500 rounded-2xl px-5 py-2 mt-5" >
                                     <p className="text-zinc-800 text-lg font-normal ">{chat.message}</p>
