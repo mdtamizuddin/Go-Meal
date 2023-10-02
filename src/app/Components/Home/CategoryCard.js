@@ -5,7 +5,7 @@ import React from 'react'
 const CategoryCard = ({ image, name }) => {
     return (
         <div className='flex flex-col justify-center items-center'>
-            <Image src={image} width={80} height={80} alt='Category' />
+            <Image src={image} width={56} height={56} alt='Category' />
             <Link href={'/'} className='mt-3 hover:underline font-normal'>{name}</Link>
         </div>
     )
