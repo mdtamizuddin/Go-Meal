@@ -13,7 +13,7 @@ const page = () => {
             <div className="container-2 px-5 h-screen overflow-y-auto">
                 <Topbar headLine={"Order History"} />
                 <div className="flex w-full p-5">
-                    <div className="w-[100%] h-screen overflow-y-auto pr-2 p-5">
+                    <div className="w-[100%]  overflow-y-auto pr-2 p-5">
                         <div className="flex justify-between">
                             <div className='w-[300px] h-[40px] relative'>
                                 <Image src={'/Images/magnifier.png'} height={20} width={20}
@@ -30,7 +30,7 @@ const page = () => {
                         </div>
 
                         {/* Table  */}
-                        <div className="overflow-x-auto mt-10">
+                        <div className="overflow-x-auto mt-10 h-[70vh] overflow-y-auto">
                             <table className="table">
                                 {/* head */}
                                 <thead>
@@ -56,11 +56,28 @@ const page = () => {
                                     <RowOrder />
                                     <RowOrder />
                                     <RowOrder />
+                                    <RowOrder />
+                                    <RowOrder />
 
                                 </tbody>
                                 {/* foot */}
                             </table>
                         </div>
+                        <div className="flex justify-between p-5">
+                            <div>
+                                <span className="text-zinc-400 text-sm font-normal ">Showing </span><span className="text-zinc-800 text-sm font-normal ">1-5</span><span className="text-zinc-800 text-sm font-normal "> </span><span className="text-zinc-400 text-sm font-normal ">from</span><span className="text-zinc-800 text-sm font-normal "> 100 </span><span className="text-zinc-400 text-sm font-normal ">data</span>
+                            </div>
+                            <div className="join">
+                                <button className="join-item btn" >«</button>
+                                <button className="join-item btn">1</button>
+                                <button className="join-item btn">2</button>
+                                <button className="join-item btn btn-disabled">...</button>
+                                <button className="join-item btn">99</button>
+                                <button className="join-item btn">100</button>
+                                <button className="join-item btn">»</button>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
